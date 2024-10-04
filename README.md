@@ -14,6 +14,8 @@ This was a practice in applying methods in reeact to build a web application. Re
 ## Credits
 Jeremmy Henry
 Andrea Presto
+## Tests
+![Alt text](./src/assets/react%20Porfolio.PNG)
 ## License
 
   This project is licensed under the MIT license.
