@@ -8,7 +8,7 @@ import App from './App';
 import Error from './pages/Error';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
-import Portfolio from './pages/Portfolio';
+import Porfolio from './pages/Porfolio';
 
 // Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
@@ -22,8 +22,8 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: '/Portfolio',
-        element: <Portfolio />,
+        path: '/Porfolio',
+        element: <Porfolio />,
       },
       {
         path: '/Contact',

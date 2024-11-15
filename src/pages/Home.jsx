@@ -2,8 +2,8 @@ export default function Home() {
   return (
     <div className="page-container">
       <div className="container">
-      <h1 className="title">About Me</h1>
-      <p>
+      <h1 className="press-start-2p-regular">About Me</h1>
+      <p className="press-start-2p-regular">
         I am a passionate web developer with extensive experience in JavaScript,
         Node.js, and React, enabling me to build dynamic and responsive
         applications. My expertise extends to utilizing Bulma and various CDNs

@@ -29,7 +29,7 @@ const Projects = () => {
 
     return (
         <div className="container">
-            <h1 className="title">My GitHub Projects</h1>
+            <h1 className="title press-start-2p-regular">My GitHub Projects</h1>
             <div className="columns is-multiline">
                 {projects.map((project) => (
                     <div className="column is-one-third" key={project.id}>
@@ -39,7 +39,7 @@ const Projects = () => {
                                 <p>{project.description || 'No description available.'}</p>
                             </div>
                             <footer className="card-footer">
-                                <a href={project.html_url} className="card-footer-item">View on GitHub</a>
+                                <a href={project.html_url} className="card-footer-item press-start-2p-regular">View on GitHub</a>
                             </footer>
                         </div>
                     </div>

@@ -1,10 +1,10 @@
 // src/FormComponent.js
-import { useState } from 'react';
+import { useState } from "react";
 
 const FormComponent = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: ''
+    name: "",
+    email: "",
   });
 
   const handleChange = (e) => {
@@ -18,15 +18,17 @@ const FormComponent = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission (e.g., send data to an API)
-    console.log('Form submitted:', formData);
+    console.log("Form submitted:", formData);
   };
 
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <label className='label' htmlFor="name">Name:</label>
+        <label className="label subtitle press-start-2p-regular" htmlFor="name">
+          Name:
+        </label>
         <input
-          className='input'
+          className="input"
           type="text"
           id="name"
           name="name"
@@ -36,9 +38,11 @@ const FormComponent = () => {
         />
       </div>
       <div>
-        <label className='label' htmlFor="email">Email:</label>
+        <label className="label subtitle press-start-2p-regular" htmlFor="email">
+          Email:
+        </label>
         <input
-          className='input'
+          className="input"
           type="email"
           id="email"
           name="email"
@@ -47,7 +51,9 @@ const FormComponent = () => {
           required
         />
       </div>
-      <button className="button" type="submit">Submit</button>
+      <button className="button form-btn press-start-2p-regular" type="submit">
+        Press start to play
+      </button>
     </form>
   );
 };

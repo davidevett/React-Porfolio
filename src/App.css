@@ -1,35 +1,82 @@
 .main {
-    background-image: url('./assets/HEROSCREEN.webp');
-    background-size: cover; /* Cover the entire area */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    margin: 0; /* Remove default margin */
-    background-attachment: fixed;
+  background-image: url("./assets/HEROSCREEN.webp");
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  margin: 0; /* Remove default margin */
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the container takes up the full viewport height */
+  margin: 0;
+}
+.navbar-menu {
+  padding: 1rem;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  text-align: center;
 }
 
-.header{
-    padding: 1rem;
+.header {
+  padding: 1rem;
 }
 .header-container {
-    background-color: rgba(255, 255, 255, 0.925);
-    color: white;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.925);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-    background-color:rgba(250, 250, 250, 0.866);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 2px, solid, white;
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.881);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0);
 }
 .page-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
 }
-.footer{
 
+/* Make the main content grow to fill available space */
+.content {
+  flex: 1; /* Allows content to grow and push the footer down */
+  padding: 2rem; /* Optional: Add spacing */
+}
+
+/* Footer styling */
+.footer {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  background-color: rgb(0, 0, 0) !important; 
+  color: white;
+  font-size: 0.9rem;
+  width: 100%;
+}
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.label {
+    margin: 1rem;
+}
+
+.form-btn{
+    margin-top: 1.5rem;
+}
+
+.title {
+  color: white !important; /* Use !important to override Bulma's default styles */
+}
+
+.subtitle {
+  color: white !important; /* Use !important to override Bulma's default styles */
 }

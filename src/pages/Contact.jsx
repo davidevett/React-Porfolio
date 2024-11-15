@@ -5,7 +5,7 @@ export default function Contact() {
     
     <div className="page-container">
       <div className="container">
-      <h1 className="title">Contact Page</h1>
+      <h1 className="title press-start-2p-regular">Contact Page</h1>
       <FormComponent />
       </div>
     </div>
